@@ -10,6 +10,7 @@
 
 :root {
     --main-bg : #1e272e;
+
     --main-color :#0087e6;
 }
 
@@ -21,31 +22,20 @@ body{
     height: 100vh;
     display: flex;
     flex-direction : column;
-}
-.navbar-expand-lg .navbar-nav .nav-link {
-    font-size: 2rem;
-    padding: 1rem 2rem;
-    margin-left: auto;
-    margin-right: 0;
-}
-.navbar-nav .nav-link {
-    font-size: 2rem;
-    padding: 1rem 2rem;
-    margin-left: auto;
-    margin-right: 0;
-}
-.navbar-brand{
-    font-size: 3rem;
-    padding: 0 2rem;
+    align-items: center;
+    justify-content: center;
 }
 .row{
     margin: 0;
+    
 }
 
 .main_menu{
     background-color: var(--main-bg);
 }
 .navbar{
+    font-size: 2rem;
+    padding: 2rem 0;
     color :#fff;
     background-color:  var(--main-bg);
 }
@@ -53,8 +43,14 @@ body{
 .navbar a{
     color :#fff;
 }
-
-.navbar-toggler{
+.navbar-brand{
+    font-size: 4rem;
+}
+button.navbar-toggler{
+    background-color: white;
+    
+}
+.navbar-light .navbar-toggler{
     background-color: gray;
     color :white;
     
@@ -83,7 +79,16 @@ body{
     justify-content: center;
     align-items: flex-start;
 }
-
+.main_header_left p{
+    font-size: 2rem;
+}
+.main_header_right{
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
 
 .main_header_rightt{
    
@@ -91,6 +96,11 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+}
+
+.w-50 {
+    width: 65%!important;
 }
 
 #about_img{
@@ -114,7 +124,17 @@ body{
 .main_header_right figure i {
     filter:drop-shadow(0 2rem 2rem rgba(0, 0, 0, 0.5))
 }
-
+.navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end;
+}
+.navbar-nav .nav-link {
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
 /* temp input fienlds styles code */
 
 .temp_form {
@@ -129,8 +149,8 @@ body{
     color: white;
     outline :none;
     border: none;
-    font-size: 1.7rem;
-    border-radius:3rem;
+    font-size: 2rem;
+    border-radius:2.5rem;
 
 }
 ::placeholder{
@@ -144,10 +164,10 @@ body{
     bottom: 10px;
     border: none;
     background: #009ad8;
-    padding: 0.3rem;
+    padding: 0.3rem 1.7rem;
     border-radius: 2rem;
     color : white;
-    font-size: 1.6rem;
+    font-size: 2rem;
 }
 
 .temp_form input[type="submit"]:hover{
@@ -213,7 +233,7 @@ sup{
 }
 
 .data_hide {
-    /* visibility: hidden; */
+    visibility: hidden;
     transition: all 0.3s linear;
 }
 
@@ -236,4 +256,108 @@ footer p{
     
 }
 
-/*responsive code *?
+/*responsive code */
+@media (max-width:381px){
+    html {
+        font-size: 35%;
+    }
+    .main_header_left{
+        height: auto;
+        margin: 3rem 0;
+        align-items: center;
+    }
+    .carousel-inner{
+        width: auto;
+        margin: auto;
+    }
+    .carousel-item{
+        margin: auto;
+        width: auto;
+        height: auto;
+        object-fit: fill;
+
+    }
+    .main_header_right{
+        height: auto;
+        margin: auto;
+        display: flex;
+        align-items: center;
+    }
+    .temp_form{
+        width: auto;
+    }
+    .tempInfo{
+        width: auto;
+    }
+}
+@media only  screen and (min-width:381px) and (max-width:480px){
+    html {
+        font-size: 40%;
+    }
+    .main_header_left{
+        height: auto;
+        margin: 3rem 0;
+        align-items: center;
+    }
+    .carousel-inner{
+        width: auto;
+        margin: auto;
+    }
+    .carousel-item{
+        margin: auto;
+        width: auto;
+        height: auto;
+        object-fit: fill;
+
+    }
+    .main_header_right{
+        height: auto;
+        margin: auto;
+        display: flex;
+        align-items: center;
+    }
+    .temp_form{
+        width: auto;
+    }
+    .tempInfo{
+        width: auto;
+    }
+}
+@media only  screen and (min-width:480px) and (max-width:769px){
+    html {
+        font-size: 50%;
+    }
+    .main_header_left{
+        height: auto;
+        margin: 3rem 0;
+        align-items: center;
+    }
+    .carousel-inner{
+        width: auto;
+        margin: auto;
+    }
+    .carousel-item{
+        margin: auto;
+        width: auto;
+        height: auto;
+        object-fit: fill;
+
+    }
+    .main_header_right{
+        height: auto;
+        margin: auto;
+        display: flex;
+        align-items: center;
+    }
+    .temp_form{
+        width: auto;
+    }
+    .tempInfo{
+        width: auto;
+    }
+}
+@media only  screen and (min-width:769px) and (max-width:1024px){
+    html {
+        font-size: 60%;
+    }
+}
