@@ -89,4 +89,14 @@ const getInfo = async(event) => {
         }
     }
 }
+
+// const submitBtn = document.getElementById('submitBtn');
+
 submitBtn.addEventListener('click',getInfo);
+// var input = document.getElementById("myInput");
+// input.addEventListener("keyup", function(event) {
+//   if (event.keyCode === 13) {
+//    event.preventDefault();
+//    document.getElementById("myBtn").click();
+//   }
+// });
